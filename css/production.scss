@@ -1,0 +1,378 @@
+@charset "utf-8";
+/* CSS Document */
+
+$primaryFont:'AvenirNext';
+$primaryFontWeight:normal;
+$primaryColor:#1d1c1c;
+
+$transition:.3s;
+$linkDefult:#00abe9;
+$linkHover:#c52d48;
+
+$btn-red:#c52d48;
+$btn-red-hover:#000;
+$btn-red-color:#fff;
+$btn-min-width:190px;
+$btn-red-padding:12px 15px;
+$btn-font:16px;
+
+$btn-blue:#00abe9;
+$btn-blue-hover:#000;
+$btn-blue-padding:5px 15px;
+$btn-blue-width:120px;
+
+$price-title-bg:#1d1c1c;
+
+$slider-bg:url(../images/section-bg.jpg);
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	background: #fff;
+	color: $primaryColor;
+	font-weight:$primaryFontWeight ;
+    font-family: $primaryFont;
+    padding-top: 56px;
+}
+* {
+	box-sizing: border-box !important;
+}
+a {
+	color: $linkDefult;
+	text-decoration: none !important;
+	transition: $transition;
+	-webkit-transition: $transition;
+	-moz-transition:$transition;
+}
+a:hover {
+	text-decoration: none;
+	color: $linkHover;
+}
+img {
+	border: 0px;
+}
+*:focus {
+	outline: none;
+}
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	margin: 0;
+}
+@font-face {
+    font-family: 'AvenirNext';
+    src: url('../fonts/AvenirNext-Heavy.eot?#iefix') format('embedded-opentype'), 
+        url('../fonts/AvenirNext-Heavy.woff') format('woff'), 
+        url('../fonts/AvenirNext-Heavy.ttf') format('truetype'), 
+        url('../fonts/AvenirNext-Heavy.svg#AvenirNext-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AvenirNext';
+    src: url('../fonts/AvenirNextLTPro-Regular.woff2') format('woff2'),
+        url('../fonts/AvenirNextLTPro-Regular.woff') format('woff'),
+        url('../fonts/AvenirNextLTPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNext';
+    src: url('../fonts/AvenirNextLTPro-It.woff2') format('woff2'),
+        url('../fonts/AvenirNextLTPro-It.woff') format('woff'),
+        url('../fonts/AvenirNextLTPro-It.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: italic;
+}
+@font-face {
+  font-family: 'AvenirNext';
+  src: url('../fonts/AvenirNext-Bold.eot?#iefix') format('embedded-opentype'),  
+      url('../fonts/AvenirNext-Bold.woff') format('woff'),
+      url('../fonts/AvenirNext-Bold.ttf')  format('truetype'), 
+      url('../fonts/AvenirNext-Bold.svg#AvenirNext-Bold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.custom-btn{
+    min-width: $btn-min-width;
+    color: $btn-red-color;
+    background-color: $btn-red;
+    line-height: 30px;
+    padding: $btn-red-padding;
+    font-weight: 600;
+    font-size: $btn-font;
+    text-transform: uppercase;
+    border:none;
+    box-shadow: none;
+    border-radius: 0;
+        
+}    
+.custom-btn:hover{
+    background-color: $btn-red-hover;
+}
+nav.primary-menu {
+    background-color: #000000;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    .row{
+        width: 100%;
+    }
+    .nav-link{
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 13px 15px  !important; 
+        line-height: 30px
+    }
+    .nav-link:hover{
+        background-color: $linkHover;
+    }
+    .navbar-brand{
+        font-weight:900;
+        color: #fff;
+        font-size: 36px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.slider-wrap{
+    background-image: $slider-bg;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 345px;
+    display: flex;
+    align-items: center;
+   
+    h1{
+        font-size: 64px;
+        color: #fff;
+        line-height: 72px;
+        letter-spacing: -0.5px;
+    }
+    h2{
+        font-weight: normal;
+        color: #fff;
+        font-size: 42px;
+        line-height: 50px;
+        margin-bottom: 15px;
+    }
+}
+
+.pricing-wrap{
+    padding:45px 0;
+	width: 100%;
+    
+    .plan-block{
+        box-shadow: 0px 14px 27px 0px rgba(25, 23, 24, 0.23);
+    }
+	.plan-block.active{
+		position: relative;
+		z-index: 9;
+	}
+    .plan-block.active .plan-name{
+        padding: 12px 15px;
+    }
+    .plan-block.active .plan-footer{
+        padding: 32px 15px;
+    }
+    .plan-name{
+        background-color: $price-title-bg;
+        line-height: 45px;
+        font-size: 24px;
+        color: #fff;
+        font-weight: 600;
+        padding: 0 15px;
+    }
+    .plan-desc{
+        padding:20px;
+		background-color: #fff;
+    }
+    .plan-desc li{
+        font-size:16px;
+        font-weight: 600;
+        line-height: 20px;
+        padding: 5px 0;
+        color: $primaryColor;
+    }
+    .plan-footer{
+        padding: 20px;
+        background-color: #e7e7e7;
+    }
+    .custom-btn{
+        background-color: $btn-blue;
+        padding: $btn-blue-padding;
+        min-width: $btn-blue-width
+    }
+    .custom-btn:hover{
+        background-color: $btn-blue-hover;
+    }
+}
+
+.table-wrap{
+	width: 100%;
+    .table thead th {
+        border-bottom: 2px solid #000000;
+        border-top: none;
+        background-color: #eeeeee;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .table tbody td {
+        font-size: 16px;
+        font-weight: 600;
+            border-top: 1px solid #e6e6e6;
+    }
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #fafafa;
+    }
+    .table-striped tbody tr:hover {
+        background-color: #EFEFEF !important;
+    }
+}
+
+footer{
+	margin-top: 50px;
+	padding-bottom: 30px;
+	
+	.footer-title{
+		font-size: 32px;
+		font-weight: 900;
+		color:$primaryColor;
+		margin-bottom: 5px;
+		line-height: 35px;
+	}
+	p{
+		color: #464646;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 24px;
+	}
+	label{
+		color: #464646;
+		font-size: 12px;
+		font-weight: normal;
+		line-height: 15px;
+	}
+	a{
+		color:#464646;
+	}
+	.form-group{
+		margin-bottom: 5px;
+	}
+	.form-control{
+		line-height: 20px;
+		padding: 4px 10px;
+		border-radius: 0;
+		box-shadow: none !important
+	}
+}
+@media only screen and (max-width:991px){
+	nav.primary-menu{
+		.navbar-toggler{
+		order: 1;
+			outline: none;
+			margin-right: 20px;
+		}
+		.navbar-brand{
+			order: 2
+		}
+		.navbar-collapse{
+			order:3
+		}
+		.collapse {
+			display: block !important;
+			position: fixed;
+			top: 0;
+			left: -100%;
+			width: 100%;
+			max-width: 285px;
+			background-color: black;
+			height: 100%;
+			overflow: auto;
+			transition: .3s;
+			padding-top: 10px;
+		}
+		.collapse.active{
+			left: 0%;
+		}
+	}
+	body{
+		padding-top: 49px;
+	}
+	
+}
+@media only screen and (max-width:767px){
+	.table-wrap{
+		margin-top: 30px;
+	}
+	.pricing-wrap {
+		.plan-block{
+			margin: 0 5px 15px;
+		}
+		.plan-block.active .plan-name {
+			padding: 0 15px;
+		}
+			.plan-block.active .plan-footer {
+			padding: 20px;
+		}
+	}
+}
+@media only screen and (max-width:480px){
+	.slider-text{
+		padding:15px 25px;
+		h1{
+			font-size: 36px;
+    		line-height: 44px;
+		}
+		 h2 {
+			font-size: 22px;
+			line-height: 30px;
+			margin-bottom: 5px;
+		}
+	}
+	.pricing-wrap {
+		.plan-block{
+			max-width: 90%;
+			margin-bottom: 20px;
+		}
+	}
+	footer {
+    margin-top: 0;
+		
+		.footer-title{
+			margin-top: 20px;
+		}
+	}
+	.pricing-wrap{
+		padding-bottom: 0;
+	}
+
+}
+/*# sourceMappingURL=production.css.map */
+
+
